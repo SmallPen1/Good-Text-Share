@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text"/>
+		<button id="button1">留言</button>
+		<button id="button2">删除</button>
+		<textarea></textarea>
+		<script>
+			var button1 = document.querySelector(" #button1");
+			var button2 = document.querySelector("#button2");
+			button1.addEventListener("click",function(){
+				var input = document.querySelector("input").value;
+				var textarea =document.querySelector("textarea");
+				textarea.innerHTML=input;
+			})
+			button2.addEventListener("click",function(){
+				var textarea = document.querySelector("textarea");
+				textarea.innerHTML="";
+			})
+		</script>
+	</body>
+</html>
